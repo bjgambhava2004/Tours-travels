@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Wayferist-TravelAgency</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/7279407.jpg" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    
+    <link rel="stylesheet" href="bootstrap.css" /> 
+
+    
+    <link href="css/style.css" rel="stylesheet" />
+    
+  </head>
+
+  <body data-bs-spy="scroll" id="body">
+    <header class="fixed-top">
+      <div class="webicon">
+        <img src="img/7279407.jpg" alt="" />
+        <p><span style="color: #0da9fd">Way</span>ferist</p>
+      </div>
+      <input type="checkbox" id="navcheck" hidden />
+      <nav>
+        <ul>
+          <li>
+            <a href="" class="active"><i class="fas fa-home"></i></a>
+          </li>
+          <li>
+            <a href="">Trending</a>
+          </li>
+          <li>
+            <a href="">Packages</a>
+          </li>
+          <li>
+            <a href="">Hotels</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="#login" data-bs-toggle="modal"
+              ><i class="fas fa-user"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="modal fade" id="login">
+      <div class="modal-dialog modal-xxl-down">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="loginform">
+              <input type="checkbox" id="chk" aria-hidden="true" />
+              <div class="signup">
+                <form action="" class="need-validation">
+                  <label for="chk" class="form-label" aria-hidden="true">Sign up</label>
+                  <input class="form-control" type="text" name="txt" placeholder="Enter Name" required />
+                  <input class="form-control" type="email" name="email" placeholder="Enter Email" required />
+                  <input class="form-control" type="password" name="password" placeholder="Enter password" required />
+                  <button>Sign up</button>
+                </form>
+              </div>
+              <div class="login2">
+                <form action="">
+                  <label for="chk" class="form-label" aria-hidden="true" >Login</label>
+                  <input class="form-control" type="email" name="email" placeholder="enter email" required />
+                  <input class="form-control" type="password" name="password" placeholder="enter password" required />
+                  <button>Login</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-5 mb-5 hero-header" id="home">
+      <div class="back-vdo">
+        <video autoplay loop muted class="back-vdo1" id="vdo">
+          <source src="img/video (2160p) (1).mp4" type="video/mp4" />
+        </video>
+      </div>
+      <!-- Navbar & Hero Start -->
+      <div class="container py-5" style="display: grid; place-items: center">
+        <div class="row justify-content-center py-5">
+          <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+            <h1 class="display-3 bg-transparent mb-3 animated slideInDown">
+              Enjoy Your Vacation With Us
+            </h1>
+            <p class="fs-4 text-white mb-4 animated slideInDown">
+              Journey to Explore World
+            </p>
+            <div class="position-relative w-75 mx-auto animated">
+              <div class="search-box">
+                <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="search" id="input-box" placeholder="Eg: Thailand" />
+                <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px">
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar & Hero End -->
+    <div class="modal fade" id="success">
+      <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-center text-primary">Login Done Successfully</p>
+            <button class="btn btn-outline-primary animatedbtn" data-bs-dismiss="modal" > OK </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="about">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px" >
+            <div class="position-relative h-100">
+              <img class="img-fluid position-absolute w-100 h-100" src="img/t1.jpg" alt="" style="object-fit: cover" />
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+            <h6 class="section-title bg-white text-start text-primary pe-3"> About Us </h6>
+            <h1 class="mb-4"> Welcome to <span class="text-primary">Tourist</span> </h1>
+            <p class="mb-4">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+              diam amet diam et eos. Clita erat ipsum et lorem et sit.
+            </p>
+            <p class="mb-4">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+              diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+              lorem sit clita duo justo magna dolore erat amet
+            </p>
+            <div class="row gy-2 gx-4 mb-4">
+              <div class="col-sm-6">
+                <p class="mb-0">
+                  <i class="fa fa-arrow-right text-primary me-2"></i>First Class
+                  Flights
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <p class="mb-0">
+                  <i class="fa fa-arrow-right text-primary me-2"></i>Handpicked
+                  Hotels
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <p class="mb-0">
+                  <i class="fa fa-arrow-right text-primary me-2"></i>5 Star
+                  Accommodations
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <p class="mb-0">
+                  <i class="fa fa-arrow-right text-primary me-2"></i>Latest
+                  Model Vehicles
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <p class="mb-0">
+                  <i class="fa fa-arrow-right text-primary me-2"></i>150 Premium
+                  City Tours
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <p class="mb-0">
+                  <i class="fa fa-arrow-right text-primary me-2"></i>24/7
+                  Service
+                </p>
+              </div>
+            </div>
+            <a class="btn btn-primary py-3 px-5 mt-2" href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5" id="service">
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title bg-white text-center text-primary px-3"> Services </h6>
+          <h1 class="mb-5">Our Services</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                <h5>WorldWide Tours</h5>
+                <p> Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
+                <h5>Hotel Reservation</h5>
+                <p> Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-user text-primary mb-4"></i>
+                <h5>Travel Guides</h5>
+                <p>
+                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                  amet diam
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                <h5>Event Management</h5>
+                <p>
+                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                  amet diam
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                <h5>WorldWide Tours</h5>
+                <p>
+                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                  amet diam
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
+                <h5>Hotel Reservation</h5>
+                <p>
+                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                  amet diam
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-user text-primary mb-4"></i>
+                <h5>Travel Guides</h5>
+                <p>
+                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                  amet diam
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="service-item rounded pt-3">
+              <div class="p-4">
+                <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                <h5>Event Management</h5>
+                <p>
+                  Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
+                  amet diam
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Destination Start -->
+    <div class="container-xxl py-5 destination" id="destination">
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title bg-white text-center text-primary px-3"> Destination </h6>
+          <h1 class="mb-5">Popular Destination</h1>
+        </div>
+        <div class="row g-3 Box">
+          <div class="col-lg-7 col-md-6">
+            <div class="row g-3">
+              <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                <a class="position-relative d-block overflow-hidden" href="#information" >
+                  <img class="img-fluid" src="img/singapore1.jpeg" alt="" />
+                  <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2" > 30% OFF </div>
+                  <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2" > Thailand </div>
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                <a class="position-relative d-block overflow-hidden" href="#information" >
+                  <img class="img-fluid" src="img/7279407.jpg" alt="" />
+                  <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2" > 25% OFF </div>
+                  <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2" > Malaysia </div>
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                <a class="position-relative d-block overflow-hidden" href="#information" >
+                  <img class="img-fluid" src="img/th3.jpeg" alt="" />
+                  <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2" > 35% OFF </div>
+                  <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2" > Australia </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px">
+            <a class="position-relative d-block h-100 overflow-hidden" href="#information" >
+              <img class="img-fluid position-absolute w-100 h-100" src="img/kashmir1.jpeg" alt="" style="object-fit: cover" />
+              <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2" > 20% OFF </div>
+              <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"> Indonesia </div>
+            </a>
+          </div>
+        </div>
+        <br />
+        <div class="row g-3 Box">
+          <div class="col-lg-7 col-md-6">
+            <div class="row g-3">
+              <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                <a class="position-relative d-block overflow-hidden" href="#information" >
+                  <img class="img-fluid" src="img/p1.jpeg.png" alt="" />
+                  <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2" > 30% OFF </div>
+                  <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2" > Thailand </div>
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                <a class="position-relative d-block overflow-hidden" href="#information" >
+                  <img class="img-fluid" src="img/aus.jpeg" alt="" />
+                  <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2" > 25% OFF </div>
+                  <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2" > Austrelia </div>
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                <a class="position-relative d-block overflow-hidden" href="#information" >
+                  <img class="img-fluid" src="img/hk3.jpeg" alt="" />
+                  <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2" > 35% OFF </div>
+                  <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">  Australia </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px" >
+            <a class="position-relative d-block h-100 overflow-hidden" href="#information" >
+              <img class="img-fluid position-absolute w-100 h-100" src="img/dubai2.jpeg" alt=""  style="object-fit: cover" />
+              <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2" > 20% OFF </div>
+              <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"> Indonesia </div>
+            </a>
+          </div>
+        </div>
+        <br />
+        <div class="row g-3 Box">
+          <div class="col-lg-7 col-md-6">
+            <div class="row g-3">
+              <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                <a class="position-relative d-block overflow-hidden" href="#information"  >
+                  <img class="img-fluid" src="img/p1.jpeg.png" alt="" />
+                  <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2" > 30% OFF </div>
+                  <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2" > Thailand </div>
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                <a class="position-relative d-block overflow-hidden" href="#information" >
+                  <img class="img-fluid" src="img/aus.jpeg" alt="" />
+                  <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2" > 25% OFF </div>
+                  <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2" > Austrelia </div>
+                </a>
+              </div>
+              <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                <a class="position-relative d-block overflow-hidden" href="#information" >
+                  <img class="img-fluid" src="img/hk3.jpeg" alt="" />
+                  <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2" > 35% OFF </div>
+                  <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2" > Australia </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px" >
+            <a class="position-relative d-block h-100 overflow-hidden" href="#information" >
+              <img class="img-fluid position-absolute w-100 h-100" src="img/dubai2.jpeg" alt="" style="object-fit: cover" />
+              <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2" > 20% OFF </div>
+              <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2" > Indonesia
+              </div>
+            </a>
+          </div>
+        </div>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!-- package start -->
+    <br />
+    <div class="container-fluid py-5" id="package">
+      <div class="container pt-5 pb-3">
+        <div class="text-center mb-3 pb-3">
+          <h6 class="text-primary text-uppercase" style="letter-spacing: 5px"> Packages </h6>
+          <h1>Pefect Tour Packages</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="package-item bg-white mb-2">
+              <img class="img-fluid" src="img/uk2.jpeg" alt="" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between mb-3">
+                  <small class="m-0" ><i class="fa fa-map-marker-alt text-primary mr-2">&nbsp;</i >London</small >
+                  <small class="m-0" ><i class="fa fa-calendar-alt text-primary mr-2">&nbsp;</i>7  days</small >
+                  <small class="m-0" ><i class="fa fa-user text-primary mr-2">&nbsp;</i>2 Person</small >
+                </div>
+                <a class="h5 text-decoration-none" href=""  >Discover amazing places of the world with us</a >
+                <div class="border-top mt-4 pt-4">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="m-0">
+                      <i class="fa fa-star text-primary mr-2"></i>4.5
+                      <small>(250)</small>
+                    </h6>
+                    <h5 class="m-0">$350</h5>
+                    <button class="btn btn-sm deatil-btn">Get details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="package-item bg-white mb-2">
+              <img class="img-fluid" src="img/singapore3.jpeg" alt="" />
+              <br /><br />
+              <div class="p-4">
+                <div class="d-flex justify-content-between mb-3">
+                  <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2">&nbsp;</i >Singapore</small >
+                  <small class="m-0" ><i class="fa fa-calendar-alt text-primary mr-2">&nbsp;</i>3 days</small >
+                  <small class="m-0" ><i class="fa fa-user text-primary mr-2">&nbsp;</i>2 Person</small >
+                </div>
+                <a class="h5 text-decoration-none" href="" >Discover amazing places of the world with us</a >
+                <div class="border-top mt-4 pt-4">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="m-0">
+                      <i class="fa fa-star text-primary mr-2"></i>4.5
+                      <small>(250)</small>
+                    </h6>
+                    <!-- <button class="btn btn-sm deatil-btn">Get details</button> -->
+                    <h5 class="m-0">$350</h5>
+                    <button class="btn btn-sm deatil-btn">Get details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="package-item bg-white mb-2">
+              <img class="img-fluid" src="img/tajmahal.jpeg" alt="" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between mb-3">
+                  <small class="m-0" ><i class="fa fa-map-marker-alt text-primary mr-2">&nbsp;</i  >India</small >
+                  <small class="m-0" ><i class="fa fa-calendar-alt text-primary mr-2">&nbsp;</i>3 days</small >
+                  <small class="m-0" ><i class="fa fa-user text-primary mr-2">&nbsp;</i>2 Person</small >
+                </div>
+                <a class="h5 text-decoration-none" href="" >Discover amazing places of the world with us</a>
+                <div class="border-top mt-4 pt-4">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="m-0">
+                      <i class="fa fa-star text-primary mr-2"></i>4.5
+                      <small>(250)</small>
+                    </h6>
+                    <!-- <button class="btn btn-sm deatil-btn">Get details</button> -->
+                    <h5 class="m-0">$350</h5>
+                    <a href="India.html" class="btn btn-sm deatil-btn" >Get details</a >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="package-item bg-white mb-2">
+              <img class="img-fluid" src="img/p4.jpg" alt="" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between mb-3">
+                  <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2">&nbsp;</i >Lakshdwips</small >
+                  <small class="m-0" ><i class="fa fa-calendar-alt text-primary mr-2">&nbsp;</i>3 days</small >
+                  <small class="m-0" ><i class="fa fa-user text-primary mr-2">&nbsp;</i>2 Person</small >
+                </div>
+                <a class="h5 text-decoration-none" href="" >Discover amazing places of the world with us</a >
+                <div class="border-top mt-4 pt-4">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="m-0">
+                      <i class="fa fa-star text-primary mr-2"></i>4.5
+                      <small>(250)</small>
+                    </h6>
+                    <h5 class="m-0">$350</h5>
+                    <button class="btn btn-sm deatil-btn">Get details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="package-item bg-white mb-2">
+              <img class="img-fluid" src="img/kashmir3.jpeg" alt="" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between mb-3 p-3">
+                  <small class="m-0 justify-content-lg-end"><i class="fa fa-map-marker-alt text-primary mr-2">&nbsp;</i >Kashmir</small >
+                  <small class="m-0" ><i class="fa fa-calendar-alt text-primary mr-2">&nbsp;</i>3 days</small >
+                  <small class="m-0" ><i class="fa fa-user text-primary mr-2">&nbsp;</i>2 Person</small >
+                </div>
+                <a class="h5 text-decoration-none" href="" >Discover amazing places of the world with us</a >
+                <div class="border-top mt-4 pt-4">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="m-0">
+                      <i class="fa fa-star text-primary mr-2"></i>4.5
+                      <small>(250)</small>
+                    </h6>
+                    <h5 class="m-0">$350</h5>
+                    <button class="btn btn-sm deatil-btn">Get details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="package-item bg-white mb-2">
+              <img class="img-fluid" src="img/aus2.jpeg" alt="" />
+              <div class="p-4">
+                <div class="d-flex justify-content-between mb-3">
+                  <small class="m-0" ><i class="fa fa-map-marker-alt text-primary mr-2">&nbsp;</i >Austrelia</small >
+                  <small class="m-0" ><i class="fa fa-calendar-alt text-primary mr-2">&nbsp;</i>3 days</small >
+                  <small class="m-0" ><i class="fa fa-user text-primary mr-2">&nbsp;</i>2 Person</small >
+                </div>
+                <a class="h5 text-decoration-none" href="" >Discover amazing places of the world with us</a >
+                <div class="border-top mt-4 pt-4">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="m-0">
+                      <i class="fa fa-star text-primary mr-2"></i>4.5
+                      <small>(250)</small>
+                    </h6>
+                    <h5 class="m-0">$350</h5>
+                    <a href="austrelia.html" class="btn btn-sm deatil-btn" >Get details</a >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Package End -->
+    <!-- cards starts -->
+    <br /><br />
+    <div class="text-center mb-3 pb-3" id="information">
+      <h6 class="text-primary text-uppercase" style="letter-spacing: 5px"> information </h6>
+      <h1>Something More about Destinations</h1>
+    </div>
+    <br />
+    <div class="container">
+      <div class="carousel slide" data-bs-ride="carousel" id="cards" style="width: 100%; height: 100%">
+        <div class="carousel-inner">
+           <div class="carousel-item active">   <!--  Singapore  -->
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="img/1722719.jpg" style="height: 500px; width: 100%" alt="" />
+                </div>
+                <div class="col-md-8 bg-white">
+                  <h3> <span class="text-primary">Location : </span> Singapore </h3>
+                  <br />
+                  <span class="text-primary">Special : </span>
+                  <p>
+                    Singapore is a dynamic city-state known for its efficient
+                    infrastructure, cultural diversity, culinary scene, and
+                    stunning attractions.
+                  </p>
+                  <span class="text-primary">Places : </span>
+                  <p>
+                    Gardens by the bay , Sentosa , Little India , Chinatown ,
+                    Marina Bay
+                  </p>
+                  <div class="d-flex border-bottom">
+                    <small class="flex-fill text-center border-end py-2" ><i class="fa fa-map-marker-alt text-primary me-2"></i>1 Hotel</small >
+                    <small class="flex-fill text-center border-end py-2" ><i class="fa fa-calendar-alt text-primary me-2"></i>5 D/6N</small >
+                    <button class="flex-fill text-center py-2 deatil-btn"> <i class="fa fa-user text-primary me-2"></i><a href="singapore.html" class="nav-link">Book Now</a>  </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">         <!--  Brazil  -->
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="img/2917476.jpg" style="height: 500px; width: 100%" alt="" />
+                </div>
+                <div class="col-md-8 bg-white">
+                  <h3> <span class="text-primary">Location : </span> Brazil </h3>
+                  <br />
+                  <span class="text-primary">Special : </span>
+                  <p>
+                    Brazil is a vast and diverse country known for its stunning
+                    natural landscapes, vibrant culture, rich history, and warm
+                    hospitality.
+                  </p>
+
+                  <span class="text-primary">Places : </span>
+                  <p>
+                    Amazon-Rainforest , lguazu Falls , Panatanal Wentlands , Rio
+                    de janeiro
+                  </p>
+                  <div class="d-flex border-bottom">
+                    <small class="flex-fill text-center border-end py-2" ><i class="fa fa-map-marker-alt text-primary me-2"></i>1 Hotel</small >
+                    <small class="flex-fill text-center border-end py-2" ><i class="fa fa-calendar-alt text-primary me-2"></i>9 D/8N</small >
+                    <button class="flex-fill text-center py-2 deatil-btn"> <i class="fa fa-user text-primary me-2"></i><a href="#" class="nav-link">Book Now</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">             <!--  Austrelia  -->
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="img/aus.jpeg" style="height: 500px; width: 100%" alt="" />
+                </div>
+                <div class="col-md-8 bg-white">
+                  <h3> <span class="text-primary">Location : </span> Austrelia </h3>
+                  <br />
+                  <span class="text-primary">Special : </span>
+                  <p>
+                    Austrelia is a vast and diverse country known for its
+                    stunning natural landscapes, vibrant culture, rich history,
+                    and warm hospitality.
+                  </p>
+
+                  <span class="text-primary">Places : </span>
+                  <p>
+                    Sydney , Perth , Gabba , Melbourne , Adileide , Brisbane
+                  </p>
+                  <div class="d-flex border-bottom">
+                    <small class="flex-fill text-center border-end py-2" ><i class="fa fa-map-marker-alt text-primary me-2"></i>2 Hotel</small >
+                    <small class="flex-fill text-center border-end py-2" ><i class="fa fa-calendar-alt text-primary me-2"></i>7D/6N </small>
+                    <button class="flex-fill text-center py-2 deatil-btn"> <i class="fa fa-user text-primary me-2"></i><a href="austrelia.html" class="nav-link">Book Now</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">                   <!--  Jammu and Kashmir , India  -->
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src="img/kashmir3.jpeg"
+                    style="height: 500px; width: 100%"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-8 bg-white">
+                  <h3> <span class="text-primary">Location : </span>Jammu and Kashmir , India </h3>
+                  <br />
+                  <span class="text-primary">Special : </span>
+                  <p>
+                    Kashmir is a vast and diverse country known for its stunning
+                    natural landscapes, vibrant culture, high mountains, and
+                    warm hospitality.
+                  </p>
+
+                  <span class="text-primary">Places : </span>
+                  <p>
+                    Jammu , Manali , gulmarg , Sonmarg , Shreenagar , kedarnath, badrinath
+                  </p>
+                  <div class="d-flex border-bottom">
+                    <small class="flex-fill text-center border-end py-2" ><i class="fa fa-map-marker-alt text-primary me-2"></i>1 Hotel</small >
+                    <small class="flex-fill text-center border-end py-2" ><i class="fa fa-calendar-alt text-primary me-2"></i>5D/4N </small>
+                    <button class="flex-fill text-center py-2 deatil-btn"> <i class="fa fa-user text-primary me-2"></i><a href="India.html" class="nav-link">Book Now</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">                      <!--  Tajmahal , Agra  -->
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src="img/tajmahal.jpeg"
+                    style="height: 500px; width: 100%"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-8 bg-white">
+                  <h3>
+                    <span class="text-primary">Location : </span>Tajmahal , Agra
+                  </h3>
+                  <br />
+                  <span class="text-primary">Special : </span>
+                  <p>
+                    Taj-mahel is a vast and diverse country known for its
+                    stunning natural landscapes,rich history, and warm
+                    hospitality.one of the 7 wonders
+                  </p>
+
+                  <span class="text-primary">Places : </span>
+                  <p>
+                    Delhi , agra , Lucknow , prayagraj , Ayodhya Ram Mandir ,
+                    Kashi
+                  </p>
+                  <div class="d-flex border-bottom">
+                    <small class="flex-fill text-center border-end py-2"
+                      ><i class="fa fa-map-marker-alt text-primary me-2"></i>1
+                      hotel</small
+                    >
+                    <small class="flex-fill text-center border-end py-2"
+                      ><i class="fa fa-calendar-alt text-primary me-2"></i>7D/8N
+                    </small>
+                    <button class="flex-fill text-center py-2 deatil-btn">
+                      <i class="fa fa-user text-primary me-2"></i> <a href="switzerland.html" class="nav-link">Book Now</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">               <!--  Lakshdwips ,India  -->
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src="img/p4.jpg"
+                    style="height: 500px; width: 100%"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-8 bg-white">
+                  <h3>
+                    <span class="text-primary">Location : </span>Lakshdwips ,India
+                  </h3>
+                  <br />
+                  <span class="text-primary">Special : </span>
+                  <p>
+                    Lakshdwips is a vast and diverse country known for its
+                    stunning natural landscapes, vibrant culture, rich history,
+                    and warm hospitality.
+                  </p>
+
+                  <span class="text-primary">Places : </span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Sunt, necessitatibus.
+                  </p>
+                  <div class="d-flex border-bottom">
+                    <small class="flex-fill text-center border-end py-2"
+                      ><i class="fa fa-map-marker-alt text-primary me-2"></i>1
+                      Hotel</small
+                    >
+                    <small class="flex-fill text-center border-end py-2"
+                      ><i class="fa fa-calendar-alt text-primary me-2"></i>5D/4N
+                    </small>
+                    <small class="flex-fill text-center py-2 deatil-btn"
+                      ><i class="fa fa-user text-primary me-2"></i> <a href="thailand.html" class="nav-link">Book Now</a></small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">               <!--  HongKong ,China  -->
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src="img/hk3.jpeg"
+                    style="height: 500px; width: 100%"
+                    alt=""
+                  />
+                </div>
+                <div class="col-md-8 bg-white">
+                  <h3>
+                    <span class="text-primary">Location : </span>HongKong ,China
+                  </h3>
+                  <br />
+                  <span class="text-primary">Special : </span>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Debitis id sapiente quibusdam accusamus fugiat magni dolor
+                    placeat vero! Quae, quasi.
+                  </p>
+
+                  <span class="text-primary">Places : </span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Sunt, necessitatibus.
+                  </p>
+                  <div class="d-flex border-bottom">
+                    <small class="flex-fill text-center border-end py-2"
+                      ><i class="fa fa-map-marker-alt text-primary me-2"></i
+                      >Malaysia</small
+                    >
+                    <small class="flex-fill text-center border-end py-2"
+                      ><i class="fa fa-calendar-alt text-primary me-2"></i>3
+                      days</small
+                    >
+                    <button class="flex-fill text-center py-2 deatil-btn">
+                      <i class="fa fa-user text-primary me-2"></i><a href="hongkong.html" class="nav-link">Book Now</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-next" data-bs-target="#cards" data-bs-slide="next" >
+          <span class="carousel-control-next-icon bg-primary"></span>
+        </button>
+        <button class="carousel-control-prev" data-bs-target="#cards" data-bs-slide="prev" >
+          <span class="carousel-control-prev-icon bg-primary"></span>
+        </button>
+      </div>
+    </div>
+    <!-- cards end -->
+    <!-- gallery starts -->
+    <div class="text-center mb-3 pb-3" id="information">
+      <h6 class="text-primary text-uppercase" style="letter-spacing: 5px"> gallery </h6>
+    </div>
+    <div class="container">
+      <br />
+      <div class="row">
+        <div class="col-4">
+          <div class="nameofcity">
+            <h4>Austrelia</h4>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="scroll">
+            <img src="img/aus.jpeg" alt="" />
+            <img src="img/aus1.jpeg" alt="" />
+            <img src="img/aus2.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-4">
+          <div class="nameofcity">
+            <h4>India</h4>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="scroll">
+            <img src="img/kashmir1.jpeg" alt="" />
+            <img src="img/p1.jpeg.png" alt="" />
+            <img
+              src="img/kashmir2.jpeg"
+              style="width: 100%; height: 481px"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-4">
+          <div class="nameofcity">
+            <h4>HongKong</h4>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="scroll">
+            <img src="img/hk1.jpeg" alt="" />
+            <img src="img/hk2.jpeg" alt="" />
+            <img src="img/hk3.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-4">
+          <div class="nameofcity">
+            <h4>Thailand</h4>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="scroll">
+            <img src="img/th1.jpeg" alt="" />
+            <img src="img/th2.jpeg" alt="" />
+            <img src="img/th3.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- gallery ends -->
+    <div id="hotel"></div>
+    <br /><br /><br />
+    <br /><br />
+    <div class="text-center mb-3 pb-3" id="information">
+      <h6 class="text-primary text-uppercase" style="letter-spacing: 5px"> HOTELS </h6>
+      <h1>Know About Some Hotels</h1>
+    </div>
+    <br /><br /><br />
+    <!-- hotels start -->
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-4">
+          <div class="popular-card">
+            <figure class="card-img">
+              <img src="img/h1.jpeg.jpg" alt="San miguel, italy" loading="lazy" />
+            </figure>
+
+            <div class="card-content">
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p class="card-subtitle">
+                <a href="#">Dubai</a>
+              </p>
+
+              <h3 class="h3 card-title">
+                <a href="#">Burj Khalifa</a>
+              </h3>
+
+              <p class="card-text">
+                Its the world tallest Hotel in world.it contains Luxury
+                Apartments in Dubai
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="popular-card">
+            <figure class="card-img">
+              <img src="img/h3.jpeg.jpg" alt="San miguel, italy" loading="lazy" />
+            </figure>
+
+            <div class="card-content">
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p class="card-subtitle">
+                <a href="#">Mumbai</a>
+              </p>
+
+              <h3 class="h3 card-title">
+                <a href="#">Taj Hotel</a>
+              </h3>
+
+              <p class="card-text">
+                Taj Hotel is most Famous Hotel in India with Luxury Rooms.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="popular-card">
+            <figure class="card-img">
+              <img src="img/h2.jpeg.jpg" alt="San miguel, italy" loading="lazy" />
+            </figure>
+
+            <div class="card-content">
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p class="card-subtitle">
+                <a href="#">Dubai</a>
+              </p>
+
+              <h3 class="h3 card-title">
+                <a href="#">Atlantis The Palm</a>
+              </h3>
+
+              <p class="card-text">
+                It located in Dubai at Sea Shore.very popular hotel in world for
+                touristers
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row justify-content-between">
+        <div class="col-md-4">
+          <div class="popular-card">
+            <figure class="card-img">
+              <img
+                src="img/singapore2.jpeg"
+                alt="San miguel, italy"
+                loading="lazy"
+              />
+            </figure>
+
+            <div class="card-content">
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p class="card-subtitle">
+                <a href="#">Singapore</a>
+              </p>
+
+              <h3 class="h3 card-title">
+                <a href="#">Paradox Merchant</a>
+              </h3>
+
+              <p class="card-text">
+                Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="popular-card">
+            <figure class="card-img">
+              <img src="img/th2.jpeg" alt="San miguel, italy" loading="lazy" />
+            </figure>
+
+            <div class="card-content">
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p class="card-subtitle">
+                <a href="#">Russia</a>
+              </p>
+
+              <h3 class="h3 card-title">
+                <a href="#">Hotel Moscou</a>
+              </h3>
+
+              <p class="card-text">
+                Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="popular-card">
+            <figure class="card-img">
+              <img src="img/uk2.jpeg" alt="San miguel, italy" loading="lazy" />
+            </figure>
+
+            <div class="card-content">
+              <div class="card-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <p class="card-subtitle">
+                <a href="#">London UK</a>
+              </p>
+
+              <h3 class="h3 card-title">
+                <a href="#">Pan Pacific</a>
+              </h3>
+
+              <p class="card-text">
+                Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hotels end -->
+    <br /><br /><br />
+    <!-- Booking Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s" id="book" >
+      <div class="container">
+        <div class="booking p-5">
+          <div class="row g-5 align-items-center">
+            <div class="col-md-6 text-white">
+              <h6 class="text-white text-uppercase">Booking</h6>
+              <h1 class="text-white mb-4">Online Booking</h1>
+              <p class="mb-4">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.
+              </p>
+              <p class="mb-4">
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+                sed stet lorem sit clita duo justo magna dolore erat amet
+              </p>
+              <a class="btn btn-outline-light py-3 px-5 mt-2" href=""
+                >Read More</a
+              >
+            </div>
+            <div class="col-md-6">
+              <h1 class="text-white mb-4">Book A Tour</h1>
+              <form class="was-validated">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name" required />
+                      <label for="name">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="email" class="form-control bg-transparent" id="email" placeholder="Your Email" required />
+                      <label for="email">Your Email</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="number" maxlength="10" class="form-control bg-transparent" id="number" placeholder="Your PhoneNo" required />
+                      <label for="number">Your Contact Number</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="number" placeholder="Number Of Person " class="form-control bg-transparent" required id="number" />
+                      <label for="number">Number Of persons</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating" required>
+                      <select class="form-select bg-transparent" id="select1">
+                        <option value="0" selected disabled hidden>
+                          Choose a Destination
+                        </option>
+                        <option value="1">Kashmir</option>
+                        <option value="1">Agra</option>
+                        <option value="1">Singapore</option>
+                        <option value="1">Dubai</option>
+                        <option value="1">Switzerland</option>
+                        <option value="1">Lakshdwips</option>
+                        <option value="1">Russia</option>
+                        <option value="2">Thailand</option>
+                        <option value="3">Brazil</option>
+                        <option value="3">Hawai</option>
+                        <option value="3">Austrelia</option>
+                        <option value="3">Hongkong</option>
+                        <option value="3">UK</option>
+                      </select>
+                      <label for="select1">Destination</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <select class="form-select bg-transparent" id="select1" required >
+                        <option value="0" selected disabled hidden>  Choose a Hotel </option>
+                        <optgroup label="INDIA">
+                          <option value="1">Taj Hotel</option>
+                          <option value="2">ITC Narmad</option>
+                          <option value="3">Jaipur</option>
+                        </optgroup>
+                        <optgroup label="DUBAI">
+                          <option value="1">Burj Khalifa</option>
+                          <option value="2">Atlantis the Palm</option>
+                          <option value="3">Noor Arab</option>
+                        </optgroup>
+                        <optgroup label="BRAZIL">
+                          <option value="1">Hotel Manaus</option>
+                          <option value="2">Golden Tulip</option>
+                          <option value="3">Brasilla Palace</option>
+                        </optgroup>
+                        <optgroup label="SINGAPORE">
+                          <option value="1">Marina Bay</option>
+                          <option value="2">Fullerton Hotel</option>
+                          <option value="3">Cruise</option>
+                        </optgroup>
+                        <optgroup label="THAILAND">
+                          <option value="1">Phra Singh Village</option>
+                          <option value="2">Amari Bangkok</option>
+                          <option value="3">Centara Kata</option>
+                        </optgroup>
+                      </select>
+                      <label for="select1">Destination</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating date" id="date3" data-target-input="nearest" >
+                      <input type="text" class="form-control bg-transparent datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" required />
+                      <label for="datetime">Date & Time</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input type="checkbox" class="form-check-input" id="checkbox" required />
+                      <lable>I agree while submitting details i'm stable</lable>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-outline-light w-100 py-3" type="submit" data-bs-toggle="modal" data-bs-target="#confirm" > Book Now </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="modal fade" id="confirm">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                We have got your Details we'll Contact You earlier and Discuss
+                about your trip Soon...
+              </p>
+              <h4>Thank You !!</h4>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-dismiss="modal"> OK </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Booking end -->
+
+    <!-- Process Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title bg-white text-center text-primary px-3"> Process </h6>
+          <h1 class="mb-5">3 Easy Steps</h1>
+        </div>
+        <div class="row gy-5 gx-4 justify-content-center">
+          <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s" >
+            <div class="position-relative border border-primary pt-5 pb-4 px-4">
+              <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px" >
+                <i class="fa fa-globe fa-3x text-white"></i>
+              </div>
+              <h5 class="mt-4">Choose A Destination</h5>
+              <hr class="w-25 mx-auto bg-primary mb-1" />
+              <hr class="w-50 mx-auto bg-primary mt-0" />
+              <p class="mb-0">
+                Tempor erat elitr rebum clita dolor diam ipsum sit diam amet
+                diam eos erat ipsum et lorem et sit sed stet lorem sit
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s" >
+            <div class="position-relative border border-primary pt-5 pb-4 px-4">
+              <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px" >
+                <i class="fa fa-dollar-sign fa-3x text-white"></i>
+              </div>
+              <h5 class="mt-4">Pay Online</h5>
+              <hr class="w-25 mx-auto bg-primary mb-1" />
+              <hr class="w-50 mx-auto bg-primary mt-0" />
+              <p class="mb-0">
+                Tempor erat elitr rebum clita dolor diam ipsum sit diam amet
+                diam eos erat ipsum et lorem et sit sed stet lorem sit
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s" >
+            <div class="position-relative border border-primary pt-5 pb-4 px-4">
+              <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px" >
+                <i class="fa fa-plane fa-3x text-white"></i>
+              </div>
+              <h5 class="mt-4">Fly Today</h5>
+              <hr class="w-25 mx-auto bg-primary mb-1" />
+              <hr class="w-50 mx-auto bg-primary mt-0" />
+              <p class="mb-0">
+                Tempor erat elitr rebum clita dolor diam ipsum sit diam amet
+                diam eos erat ipsum et lorem et sit sed stet lorem sit
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Process Start -->
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+          <h6 class="section-title bg-white text-center text-primary px-3"> Travel Guide </h6>
+          <h1 class="mb-5">Meet Our Guide</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/team-5.jpg" alt="" />
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -19px" >
+                <a class="btn btn-square mx-1" href="" ><i class="fab fa-facebook-f"></i ></a>
+                <a class="btn btn-square mx-1" href="" ><i class="fab fa-twitter"></i ></a>
+                <a class="btn btn-square mx-1" href="" ><i class="fab fa-instagram"></i ></a>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">Full Name</h5>
+                <small>Designation</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-item">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/team-6.jpg" alt="" />
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -19px">
+                <a class="btn btn-square mx-1" href="" ><i class="fab fa-facebook-f"></i ></a>
+                <a class="btn btn-square mx-1" href="" ><i class="fab fa-twitter"></i ></a>
+                <a class="btn btn-square mx-1" href="" ><i class="fab fa-instagram"></i ></a>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">Full Name</h5>
+                <small>Designation</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="team-item">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/team-3.jpg" alt="" />
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -19px" >
+                <a class="btn btn-square mx-1" href="" ><i class="fab fa-facebook-f"></i ></a>
+                <a class="btn btn-square mx-1" href="" ><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square mx-1" href="" ><i class="fab fa-instagram"></i ></a>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">Full Name</h5>
+                <small>Designation</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+            <div class="team-item">
+              <div class="overflow-hidden">
+                <img class="img-fluid" src="img/team-4.jpg" alt="" />
+              </div>
+              <div class="position-relative d-flex justify-content-center" style="margin-top: -19px" >
+                <a class="btn btn-square mx-1" href="" ><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square mx-1" href="" ><i class="fab fa-instagram"></i ></a>
+              </div>
+              <div class="text-center p-4">
+                <h5 class="mb-0">Full Name</h5>
+                <small>Designation</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s" >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Company</h4>
+            <a class="btn btn-link" href="">About Us</a>
+            <a class="btn btn-link" href="">Contact Us</a>
+            <a class="btn btn-link" href="">Privacy Policy</a>
+            <a class="btn btn-link" href="">Terms & Condition</a>
+            <a class="btn btn-link" href="">FAQs & Help</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Contact</h4>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>A-103 Swaminarayan Krupa 1
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>8849070518
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>bhavyagambhava2004@gmail.com
+            </p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-outline-light btn-social" href="" ><i class="fab fa-twitter"></i ></a>
+              <a class="btn btn-outline-light btn-social" href="" ><i class="fab fa-facebook-f"></i ></a>
+              <a class="btn btn-outline-light btn-social" href="" ><i class="fab fa-youtube"></i ></a>
+              <a class="btn btn-outline-light btn-social" href="" ><i class="fab fa-linkedin-in"></i ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Gallery</h4>
+            <div class="row g-2 pt-2">
+              <div class="col-4">
+                <img class="img-fluid bg-light p-1" src="img/package-1.jpg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid bg-light p-1" src="img/package-2.jpg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid bg-light p-1" src="img/package-3.jpg" alt=""/>
+              </div>
+              <div class="col-4">
+                <img class="img-fluid bg-light p-1" src="img/package-2.jpg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid bg-light p-1" src="img/package-3.jpg" alt="" />
+              </div>
+              <div class="col-4">
+                <img class="img-fluid bg-light p-1" src="img/package-1.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-white mb-3">Newsletter</h4>
+            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+            <div class="position-relative mx-auto" style="max-width: 400px">
+              <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
+              <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" > SignUp </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a class="border-bottom" href="#">Wayferist</a>, All
+              Right Reserved. Designed By
+              <a class="border-bottom" href="#">Bhavya Gambhava</a>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-menu">
+                <a href="">Home</a>
+                <a href="">Cookies</a>
+                <a href="">Help</a>
+                <a href="">FQAs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/m2.js"></script>
+  </body>
+</html>

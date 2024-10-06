@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book-Travel</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="icon" href="img/7279407.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-image: url(img/h2.jpeg.jpg);
+        background-position: center;
+        background-repeat: repeat-y;
+        background-size: 100%;
+        backdrop-filter: blur(5px);
+      }
+      .main {
+        width: 100%;
+        height: 100vh;
+        /* filter: grayscale(500px); */
+        padding: 20px;
+        display: grid;
+        place-items: center;
+      }
+      form {
+        padding: 10px 20px;
+        justify-content: space-around;
+        /* box-shadow: 2px 10px 10px 10px black; */
+      }
+      .row input {
+        padding: 10px 10px;
+        margin-top: 20px;
+        border-radius: 20px;
+        /* background-color: transparent; */
+        background-color: #f4f6ff;
+      }
+      .col-sm-6 select {
+        padding: 10px 10px;
+        margin-top: 20px;
+        border-radius: 20px;
+        /* background-color: transparent; */
+        background-color: #f4f6ff;
+      }
+      input[type="date"] {
+        padding: 10px 10px;
+        margin-top: 20px;
+        width: 100%;
+        border-radius: 20px;
+        background-color: #f4f6ff;
+        border-color: lightblue;
+      }
+      input[type="date"]:focus,
+      .col-sm-6 select:focus,
+      .row input:focus {
+        background-color: white;
+      }
+      ::placeholder {
+        /* color: black; */
+        font-weight: bold;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container main">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="container">
+            <h4
+              style="
+                text-align: center;
+                color: transparent;
+                font-size: 50px;
+                background-image: url(img/p1.jpeg.png);
+                background-position: center;
+                background-clip: text;
+              "
+            >
+              Booking Online
+            </h4>
+            <p style="color: #f4f6ff; font-size: 20px; margin-top: 10px">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              dolore ut consequuntur animi ab aut cupiditate veritatis quos
+              voluptatum, nam, atque iusto. Iste exercitationem totam, hic
+              explicabo quae esse, ipsum officia deserunt veritatis doloribus
+              facilis recusandae quia, veniam nulla aperiam quod dolores
+              doloremque. Sunt, vero inventore culpa vitae molestias ratione
+              perspiciatis voluptas quisquam, quis possimus error iure? Libero
+              harum assumenda beatae, soluta cumque perferendis aliquid
+              praesentium, deserunt ea expedita laudantium ut totam pariatur.
+            </p>
+            <button class="btn btn-outline-dark">More</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4
+            style="
+              text-align: center;
+              color: transparent;
+              font-size: 50px;
+              background-image: url(img/p1.jpeg.png);
+              background-position: center;
+              background-clip: text;
+            "
+          >
+            Book a Tour
+          </h4>
+          <form action="" class="was-validated">
+            <div class="row">
+              <div class="col-sm-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                  id="name"
+                  required
+                />
+              </div>
+              <div class="col-sm-6">
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  id="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <input
+                  type="number"
+                  placeholder="Your Contact"
+                  id="contact"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="col-sm-6">
+                <input
+                  type="number"
+                  placeholder="number of persons"
+                  id="persons"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <select class="form-select" required>
+                  <option value="" selected disabled hidden>
+                    Choose a Tour|Package
+                  </option>
+                  <option value="">India</option>
+                  <option value="">Kashmir</option>
+                  <option value="">Austrelia</option>
+                  <option value="">Russia</option>
+                  <option value="">Switzerland</option>
+                  <option value="">Dubai</option>
+                  <option value="">Thailand</option>
+                  <option value="">Singapore</option>
+                  <option value="">Europe</option>
+                  <option value="">HongKong</option>
+                  <option value="">London</option>
+                  <option value="">Lakshadweep | Andman&Nicobars</option>
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <select class="form-select" id="select1" required>
+                  <option value="0" selected disabled hidden>
+                    Choose a Hotel
+                  </option>
+                  <optgroup label="INDIA">
+                    <option value="1">Taj Hotel</option>
+                    <option value="2">ITC Narmad</option>
+                    <option value="3">Jaipur</option>
+                  </optgroup>
+                  <optgroup label="DUBAI">
+                    <option value="1">Burj Khalifa</option>
+                    <option value="2">Atlantis the Palm</option>
+                    <option value="3">Noor Arab</option>
+                  </optgroup>
+                  <optgroup label="BRAZIL">
+                    <option value="1">Hotel Manaus</option>
+                    <option value="2">Golden Tulip</option>
+                    <option value="3">Brasilla Palace</option>
+                  </optgroup>
+                  <optgroup label="SINGAPORE">
+                    <option value="1">Marina Bay</option>
+                    <option value="2">Fullerton Hotel</option>
+                    <option value="3">Cruise</option>
+                  </optgroup>
+                  <optgroup label="THAILAND">
+                    <option value="1">Phra Singh Village</option>
+                    <option value="2">Amari Bangkok</option>
+                    <option value="3">Centara Kata</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <input type="date" placeholder="Choose Date" />
+            </div>
+            <div class="justify-content-between">
+              <div class="col-sm-4">
+                <input type="checkbox" class="form-check-input" />
+              </div>
+              <div class="col-sm-8">
+                <p style="color: #f4f6ff">
+                  I agree while submitting details i'm stable
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <input
+                class="btn btn-light"
+                type="submit"
+                data-bs-toggle="modal"
+                data-bs-target="#booked"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="booked">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <h6>
+              Your information Submitted Successfully.We'll Contact you earlier
+              Thank You
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
